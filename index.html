@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.angularjs.org/1.5.0/angular.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ag-grid/3.3.3/ag-grid.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+  <script src="https://unpkg.com/@ag-grid-community/all-modules@24.1.0/dist/ag-grid-community.min.js"></script>
+  <script src="./main.js"></script>
+
+  <style>
+    /* button{
+      opacity: 0;
+      z-index: -1;
+    } */
+    p{
+      visibility: 0;
+    }
+  </style>
+
+</head>
+
+<body ng-app="example" ng-controller="exampleCtrl">
+  <div ag-grid="grid" class="ag-theme-alpine" style="height: 300px;"></div>
+  <!-- ag-fresh -->
+    <button ng-click="deleteRow();">Delete Selected Row</button>
+    <button ng-click="getRowData()">Get Row Data</button>
+    <button ng-click="clearData()">Clear Data</button>
+    <button ng-click="addItems()">Add Items</button>
+</body>
+
+</html>
